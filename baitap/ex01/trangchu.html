@@ -2,34 +2,205 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Trang Chủ Bán Xe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhà Hàng Thanh Sương</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-image: url('https://via.placeholder.com/1200x400?text=Thanh+Sương+Restaurant');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .menu-items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .menu-item {
+      flex: 1 1 calc(33% - 20px);
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 15px;
+      overflow: hidden;
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .menu-item h3 {
+      margin: 15px 0;
+      font-size: 1.5rem;
+    }
+
+    .menu-item p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #28a745;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #218838;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .contact-info p {
+      font-size: 1.2rem;
+    }
+
+    .contact-info a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .menu-item {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <h1>Showroom Xe ABC</h1>
-  <p>Chuyên bán các dòng xe mới, chất lượng cao, giá tốt!</p>
+<header>
+  <h1>Nhà Hàng Thanh Sương</h1>
+  <p>Khám phá hương vị ẩm thực đặc trưng tại Nhà Hàng Thanh Sương</p>
+</header>
 
-  <h2>Xe nổi bật</h2>
-  <ul>
-    <li>Toyota Vios – 480 triệu VNĐ</li>
-    <li>Hyundai Accent – 455 triệu VNĐ</li>
-    <li>Kia Seltos – 599 triệu VNĐ</li>
-  </ul>
+<div class="container">
+  <h2>Món ăn nổi bật</h2>
+  <div class="menu-items">
+    <div class="menu-item">
+      <img src="https://via.placeholder.com/300x200?text=Món+Gà+Nướng" alt="Món Gà Nướng">
+      <h3>Gà Nướng Mật Ong</h3>
+      <p>Gà nướng thơm ngon, lớp sốt mật ong đặc biệt, ăn kèm rau củ tươi ngon.</p>
+      <p class="price">150.000 VNĐ</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://via.placeholder.com/300x200?text=Món+Phở+Bò" alt="Món Phở Bò">
+      <h3>Phở Bò Thanh Sương</h3>
+      <p>Phở bò với nước dùng đậm đà, thịt bò tươi ngon, ăn kèm rau sống và gia vị đặc trưng.</p>
+      <p class="price">80.000 VNĐ</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://via.placeholder.com/300x200?text=Bánh+Xèo" alt="Bánh Xèo">
+      <h3>Bánh Xèo Cuốn Thịt Nướng</h3>
+      <p>Bánh xèo giòn rụm cuộn thịt nướng thơm lừng, ăn kèm nước mắm chua ngọt.</p>
+      <p class="price">70.000 VNĐ</p>
+    </div>
+  </div>
 
-  <h2>Liên hệ với chúng tôi</h2>
+  <h2>Đặt bàn tại Nhà Hàng Thanh Sương</h2>
   <form action="#" method="post">
-    <label for="email">Gmail:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+    <label for="name">Họ và Tên:</label>
+    <input type="text" id="name" name="name" placeholder="Nhập họ tên..." required>
 
-    <label for="name">Họ và Tên:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Nhập email..." required>
 
-    <label for="message">Nội dung:</label><br>
-    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    <label for="phone">Số điện thoại:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại..." required>
 
-    <button type="submit">Gửi yêu cầu</button>
+    <label for="date">Ngày đặt bàn:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Giờ đặt bàn:</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="message">Yêu cầu đặc biệt:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Nhập yêu cầu nếu có..."></textarea>
+
+    <button type="submit">Đặt bàn</button>
   </form>
+
+  <div class="contact-info">
+    <p>Địa chỉ: 123 Đường ABC, Thành phố XYZ</p>
+    <p>Giờ mở cửa: 8:00 AM - 10:00 PM</p>
+    <p>Điện thoại: <a href="tel:+84987654321">0987 654 321</a></p>
+    <p>Email: <a href="mailto:contact@thanhsonrestaurant.com">contact@thanhsonrestaurant.com</a></p>
+  </div>
+</div>
 
 </body>
 </html>
+
+ 
 
