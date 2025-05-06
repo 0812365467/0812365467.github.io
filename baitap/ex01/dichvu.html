@@ -2,92 +2,134 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Dịch Vụ Bán Xe - Showroom ABC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dịch Vụ Nhà Hàng Thanh Sương</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f9fa;
+      background-color: #f8f8f8;
     }
 
     header {
-      background-color: #007bff;
+      background-image: url('https://via.placeholder.com/1200x400?text=Nhà+Hàng+Thanh+Sương');
+      background-size: cover;
+      background-position: center;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 10px;
     }
 
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 30px;
-      background-color: white;
     }
 
-    .service-list {
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .service-items {
       display: flex;
-      gap: 30px;
+      gap: 20px;
       flex-wrap: wrap;
       justify-content: space-between;
     }
 
-    .service {
-      background-color: #ffffff;
-      border: 1px solid #ddd;
+    .service-item {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 6px;
-      flex: 1 1 calc(33.333% - 30px);
-      box-sizing: border-box;
+      flex: 1 1 calc(33.333% - 20px);
     }
 
-    .service h3 {
-      color: #007bff;
+    .service-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
     }
 
-    .service p {
-      margin-bottom: 15px;
-      color: #333;
+    .service-item h3 {
+      margin: 15px 0;
+      font-size: 1.5rem;
     }
 
-    form {
-      margin-top: 40px;
-      background-color: #ffffff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 6px;
+    .service-item p {
+      color: #555;
+      margin-bottom: 10px;
     }
 
-    form label {
-      display: block;
-      margin-bottom: 8px;
+    .contact-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+
+    .contact-form label {
       font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
     }
 
-    form input, form textarea {
+    .contact-form input,
+    .contact-form textarea {
       width: 100%;
       padding: 10px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
 
-    form button {
-      padding: 12px 20px;
-      background-color: #007bff;
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #28a745;
       color: white;
       border: none;
       border-radius: 4px;
       cursor: pointer;
     }
 
-    form button:hover {
-      background-color: #0056b3;
+    .contact-form button:hover {
+      background-color: #218838;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .contact-info p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .contact-info a {
+      color: #007bff;
+      text-decoration: none;
     }
 
     @media (max-width: 768px) {
-      .service {
+      .service-item {
         flex: 1 1 100%;
       }
     }
@@ -96,59 +138,58 @@
 <body>
 
 <header>
-  <h1>Dịch Vụ Bán Xe ABC</h1>
-  <p>Giải pháp xe hơi cho mọi khách hàng</p>
+  <h1>Dịch Vụ Nhà Hàng Thanh Sương</h1>
+  <p>Đặt tiệc, giao hàng và tổ chức sự kiện cho mọi dịp đặc biệt</p>
 </header>
 
 <div class="container">
 
-  <h2>Chúng tôi cung cấp các dịch vụ sau:</h2>
+  <section class="about">
+    <h2 class="section-title">Các Dịch Vụ Của Nhà Hàng</h2>
+    <div class="service-items">
+      <div class="service-item">
+        <img src="https://via.placeholder.com/300x200?text=Đặt+Tiệc" alt="Dịch vụ Đặt Tiệc">
+        <h3>Đặt Tiệc Theo Yêu Cầu</h3>
+        <p>Chúng tôi cung cấp dịch vụ đặt tiệc cho các sự kiện lớn nhỏ, từ tiệc cưới, sinh nhật đến các sự kiện công ty. Với thực đơn đa dạng, phù hợp mọi nhu cầu của khách hàng.</p>
+      </div>
 
-  <div class="service-list">
+      <div class="service-item">
+        <img src="https://via.placeholder.com/300x200?text=Giao+Hàng" alt="Dịch vụ Giao Hàng">
+        <h3>Giao Hàng Tận Nơi</h3>
+        <p>Nhà Hàng Thanh Sương cung cấp dịch vụ giao hàng tận nơi. Bạn có thể thưởng thức các món ăn đặc biệt của chúng tôi ngay tại nhà hoặc văn phòng.</p>
+      </div>
 
-    <!-- Dịch vụ 1: Mua bán xe -->
-    <div class="service">
-      <h3>Mua bán xe</h3>
-      <p>Chúng tôi chuyên cung cấp xe mới và xe đã qua sử dụng với giá cả hợp lý và chất lượng cao.</p>
+      <div class="service-item">
+        <img src="https://via.placeholder.com/300x200?text=Tổ+Chức+Sự+Kiện" alt="Tổ Chức Sự Kiện">
+        <h3>Tổ Chức Sự Kiện</h3>
+        <p>Chúng tôi hỗ trợ tổ chức các sự kiện đặc biệt như hội nghị, tiệc kỷ niệm, hay các chương trình giải trí. Không gian sang trọng, dịch vụ chuyên nghiệp, tạo dấu ấn khó quên.</p>
+      </div>
     </div>
+  </section>
 
-    <!-- Dịch vụ 2: Tư vấn xe -->
-    <div class="service">
-      <h3>Tư vấn chọn xe</h3>
-      <p>Chúng tôi cung cấp dịch vụ tư vấn chọn xe phù hợp với nhu cầu và tài chính của khách hàng.</p>
-    </div>
+  <section class="contact">
+    <h2 class="section-title">Liên Hệ Để Sử Dụng Dịch Vụ</h2>
+    <form class="contact-form" action="#" method="post">
+      <label for="name">Họ và Tên:</label>
+      <input type="text" id="name" name="name" placeholder="Nhập họ tên..." required>
 
-    <!-- Dịch vụ 3: Bảo dưỡng xe -->
-    <div class="service">
-      <h3>Bảo dưỡng và sửa chữa xe</h3>
-      <p>Chúng tôi cung cấp dịch vụ bảo dưỡng và sửa chữa xe chất lượng với đội ngũ kỹ thuật viên giàu kinh nghiệm.</p>
-    </div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Nhập email..." required>
 
-  </div>
+      <label for="message">Nội dung yêu cầu:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Nhập thông tin dịch vụ bạn cần..." required></textarea>
 
-  <h2>Liên hệ với chúng tôi</h2>
-  <form action="#" method="post">
-    <label for="name">Họ và Tên:</label>
-    <input type="text" id="name" name="name" placeholder="Nhập họ tên..." required>
+      <button type="submit">Gửi Yêu Cầu</button>
+    </form>
+  </section>
 
-    <label for="email">Gmail:</label>
-    <input type="email" id="email" name="email" placeholder="Nhập email..." required>
-
-    <label for="service">Chọn dịch vụ bạn quan tâm:</label>
-    <select id="service" name="service">
-      <option value="mua_ban_xe">Mua bán xe</option>
-      <option value="tu_van_xe">Tư vấn chọn xe</option>
-      <option value="bao_duong">Bảo dưỡng và sửa chữa xe</option>
-    </select>
-
-    <label for="message">Nội dung yêu cầu:</label>
-    <textarea id="message" name="message" rows="5" placeholder="Bạn có yêu cầu gì không?" required></textarea>
-
-    <button type="submit">Gửi yêu cầu</button>
-  </form>
+  <section class="contact-info">
+    <p>Địa chỉ: 123 Đường ABC, Thành phố XYZ</p>
+    <p>Điện thoại: <a href="tel:+84987654321">0987 654 321</a></p>
+    <p>Email: <a href="mailto:contact@thanhsonrestaurant.com">contact@thanhsonrestaurant.com</a></p>
+  </section>
 
 </div>
 
 </body>
 </html>
-
