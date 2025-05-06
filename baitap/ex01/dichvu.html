@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Dịch Vụ Bán Xe - Showroom ABC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+      background-color: white;
+    }
+
+    .service-list {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .service {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      flex: 1 1 calc(33.333% - 30px);
+      box-sizing: border-box;
+    }
+
+    .service h3 {
+      color: #007bff;
+    }
+
+    .service p {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    form {
+      margin-top: 40px;
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      padding: 12px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .service {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dịch Vụ Bán Xe ABC</h1>
+  <p>Giải pháp xe hơi cho mọi khách hàng</p>
+</header>
+
+<div class="container">
+
+  <h2>Chúng tôi cung cấp các dịch vụ sau:</h2>
+
+  <div class="service-list">
+
+    <!-- Dịch vụ 1: Mua bán xe -->
+    <div class="service">
+      <h3>Mua bán xe</h3>
+      <p>Chúng tôi chuyên cung cấp xe mới và xe đã qua sử dụng với giá cả hợp lý và chất lượng cao.</p>
+    </div>
+
+    <!-- Dịch vụ 2: Tư vấn xe -->
+    <div class="service">
+      <h3>Tư vấn chọn xe</h3>
+      <p>Chúng tôi cung cấp dịch vụ tư vấn chọn xe phù hợp với nhu cầu và tài chính của khách hàng.</p>
+    </div>
+
+    <!-- Dịch vụ 3: Bảo dưỡng xe -->
+    <div class="service">
+      <h3>Bảo dưỡng và sửa chữa xe</h3>
+      <p>Chúng tôi cung cấp dịch vụ bảo dưỡng và sửa chữa xe chất lượng với đội ngũ kỹ thuật viên giàu kinh nghiệm.</p>
+    </div>
+
+  </div>
+
+  <h2>Liên hệ với chúng tôi</h2>
+  <form action="#" method="post">
+    <label for="name">Họ và Tên:</label>
+    <input type="text" id="name" name="name" placeholder="Nhập họ tên..." required>
+
+    <label for="email">Gmail:</label>
+    <input type="email" id="email" name="email" placeholder="Nhập email..." required>
+
+    <label for="service">Chọn dịch vụ bạn quan tâm:</label>
+    <select id="service" name="service">
+      <option value="mua_ban_xe">Mua bán xe</option>
+      <option value="tu_van_xe">Tư vấn chọn xe</option>
+      <option value="bao_duong">Bảo dưỡng và sửa chữa xe</option>
+    </select>
+
+    <label for="message">Nội dung yêu cầu:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Bạn có yêu cầu gì không?" required></textarea>
+
+    <button type="submit">Gửi yêu cầu</button>
+  </form>
+
+</div>
+
+</body>
+</html>
 
